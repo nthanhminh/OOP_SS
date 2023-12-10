@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import java.net.URL?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.StackPane?>
+<VBox alignment="TOP_LEFT" spacing="0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.demo.HelloController">
+    <stylesheets>
+        <URL value="@./css/chat.css"></URL>
+    </stylesheets>
+    <HBox styleClass="header" spacing="20" alignment="CENTER_LEFT">
+        <VBox alignment="CENTER">
+            <ImageView>
+                <image>
+                    <Image url="@./assets/arrow.png"></Image>
+                </image>
+            </ImageView>
+        </VBox>
+        <VBox alignment="CENTER">
+            <ImageView>
+                <image>
+                    <Image url="@./assets/user.png"/>
+                </image>
+            </ImageView>
+        </VBox>
+        <VBox styleClass="info" alignment="CENTER_LEFT">
+            <HBox alignment="CENTER_LEFT">
+                <Label text="LA LALISA" styleClass="name"></Label>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <VBox alignment="CENTER">
+                    <ImageView>
+                        <image>
+                            <Image url="@./assets/online.png"></Image>
+                        </image>
+                    </ImageView>
+                </VBox>
+                <VBox alignment="CENTER_LEFT">
+                    <Label text="Online"></Label>
+                </VBox>
+            </HBox>
+        </VBox>
+        <VBox alignment="CENTER" styleClass="contain">
+            <ImageView>
+                <image>
+                    <Image url="@./assets/phone.png"></Image>
+                </image>
+            </ImageView>
+        </VBox>
+        <VBox alignment="CENTER" styleClass="contain">
+            <ImageView>
+                <image>
+                    <Image url="@./assets/video.png"></Image>
+                </image>
+            </ImageView>
+        </VBox>
+    </HBox>
+    <VBox styleClass="chat" spacing="15">
+        <HBox alignment="CENTER">
+            <HBox styleClass="time" alignment="CENTER">
+                <Label text="Today" styleClass="name"></Label>
+            </HBox>
+        </HBox>
+        <VBox spacing="10">
+            <HBox alignment="CENTER_RIGHT">
+                <VBox styleClass="myChat" alignment="CENTER_LEFT">
+                    <Label styleClass="myText" text="Let's going out tonight"></Label>
+                </VBox>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT">
+                <VBox styleClass="myChat" alignment="CENTER_LEFT">
+                    <Label styleClass="myText" text="Let's going out tonight. Go Go Go"></Label>
+                </VBox>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT">
+                <VBox alignment="CENTER_LEFT">
+                    <Label styleClass="anoText" text="Read"></Label>
+                </VBox>
+            </HBox>
+        </VBox>
+        <VBox spacing="10">
+            <HBox alignment="CENTER_LEFT">
+                <VBox styleClass="yourChat" alignment="CENTER_LEFT">
+                    <Label styleClass="myText" text="Alright. Come to my before going night"></Label>
+                </VBox>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+                <VBox styleClass="yourChat" alignment="CENTER_LEFT">
+                    <Label styleClass="myText" text="Let me prepare myself first"></Label>
+                </VBox>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+                <VBox styleClass="yourChat" alignment="CENTER_LEFT">
+                    <Label styleClass="myText" text="See you baby"></Label>
+                </VBox>
+            </HBox>
+        </VBox>
+        <VBox spacing="10">
+            <HBox alignment="CENTER_RIGHT">
+                <VBox styleClass="myChat" alignment="CENTER_LEFT">
+                    <Label styleClass="myText" text="Bye"></Label>
+                </VBox>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT">
+                <VBox alignment="CENTER_LEFT">
+                    <Label styleClass="anoText" text="Delivered"></Label>
+                </VBox>
+            </HBox>
+        </VBox>
+    </VBox>
+    <HBox styleClass="footer" spacing="15" alignment="CENTER_LEFT">
+        <VBox styleClass="contain" alignment="CENTER">
+            <ImageView>
+                <image>
+                    <Image url="@./assets/image.png"></Image>
+                </image>
+            </ImageView>
+        </VBox>
+        <StackPane minWidth="280">
+            <TextField HBox.hgrow="ALWAYS" styleClass="input" promptText="Your message .." disable="true"/>
+            <VBox styleClass="containSt" alignment="CENTER" translateX="0" StackPane.alignment="CENTER_RIGHT" >
+                <ImageView>
+                    <image>
+                        <Image url="@./assets/sent.png"></Image>
+                    </image>
+                </ImageView>
+            </VBox>
+        </StackPane>
+        <VBox styleClass="contain" alignment="CENTER">
+            <ImageView>
+                <image>
+                    <Image url="@./assets/voice.png"></Image>
+                </image>
+            </ImageView>
+        </VBox>
+    </HBox>
+</VBox>
